@@ -15,37 +15,46 @@
     <div class="info">
         <label>
             Логин:
-            <input required type="text" placeholder="Логин" autocomplete="on">
+            <input required type="text" placeholder="Логин" autocomplete="on" name="login">
         </label>
     </div>
     <div class="info">
         <label>
             E-mail:
-            <input required type="email" placeholder="E-mail" autocomplete="on">
+            <input required type="email" placeholder="E-mail" autocomplete="on" name="email">
         </label>
     </div>
     <div class="info">
         <label>
             Пароль:
-            <input required name="password" type="password" maxlength="10" placeholder="Пароль" autocomplete="">
+            <input required name="password" type="password" maxlength="10" placeholder="Пароль" autocomplete="off" >
         </label>
     </div>
     <div class="info">
         <label>
             Подтвердить:
-            <input required name="password" type="password" maxlength="10" placeholder="Подтвердите пароль" autocomplete="">
+            <input required name="check_password" type="password" maxlength="10" placeholder="Подтвердите пароль" autocomplete="">
         </label>
     </div>
 
     <div class="info">
         <label>
             M
-            <input required type="radio" name="gender">
+            <input required type="radio" name="gender" value="man">
         </label>
         <label>
             Ж
-            <input required type="radio" name="gender">
+            <input required type="radio" name="gender" value="woman">
+        </label>
     </div>
+   <div class="info">
+       <select name="city">
+           <option value="Москва">Москва</option>
+           <option value="Cанкт-Петербург">Cанкт-Петербург</option>
+           <option value="Казань">Казань</option>
+           <option value="Екатеринбург">Екатеринбург</option>
+       </select>
+   </div>
 
     <button>Войти</button>
 
