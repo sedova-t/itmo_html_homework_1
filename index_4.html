@@ -15,7 +15,7 @@
     <div class="info">
         <label>
             Логин:
-            <input required type="text" placeholder="Логин" autocomplete="on" name="login">
+            <input required type="text" placeholder="Логин" autocomplete="on" name="login" maxlength="10" minlength="7">
         </label>
     </div>
     <div class="info">
@@ -27,13 +27,13 @@
     <div class="info">
         <label>
             Пароль:
-            <input required name="password" type="password" maxlength="10" placeholder="Пароль" autocomplete="off" >
+            <input required name="password" type="password" maxlength="10" minlength="7" placeholder="Пароль" autocomplete="off" >
         </label>
     </div>
     <div class="info">
         <label>
             Подтвердить:
-            <input required name="check_password" type="password" maxlength="10" placeholder="Подтвердите пароль" autocomplete="">
+            <input required name="check_password" type="password" maxlength="10" minlength="7" placeholder="Подтвердите пароль" autocomplete="">
         </label>
     </div>
 
