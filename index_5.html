@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="account">
+
+    <h1>Личный кабинет</h1>
+    <h2>Добрый день, Михаил</h2>
+
+    <ul class="list">
+        <li>
+            <a href="#" style="color: #5b2b0c">Личные данные</a>
+        </li>
+        <li>
+            <a href="#">Логин и пароль</a>
+        </li>
+        <li>
+            <a href="index.html">Вернуться на главную</a>
+        </li>
+    </ul>
+
+    <form class="page_5">
+        <div class="info">
+            <label>
+                <span class="title">Фамилия:</span>
+                <input required type="text" placeholder="Введите фамилию" autocomplete="on" name="surname">
+            </label>
+        </div>
+
+        <div class="info">
+            <label>
+                <span class="title">Имя:</span>
+                <input required type="text" placeholder="Введите имя" autocomplete="on" name="name">
+            </label>
+        </div>
+
+        <div class="info">
+            <label>
+                <span class="title">Отчество:</span>
+                <input required type="text" placeholder="Введите отчество" autocomplete="on" name="second_name">
+            </label>
+
+        </div>
+
+        <div class="info">
+            <label>
+                M
+                <input class="choose" required type="radio" name="gender" value="man" checked>
+            </label>
+            <label>
+                Ж
+                <input class="choose" required type="radio" name="gender" value="woman">
+            </label>
+        </div>
+
+        <div class="info">
+            <label>
+                <span class="title">Дата рождения:</span>
+                <input required type="date" name="date"/>
+            </label>
+
+        </div>
+
+        <div class="info">
+            <span class="title">Выберите город:</span>
+            <select name="city" class="city">
+                <option value="Москва">Москва</option>
+                <option value="Cанкт-Петербург">Cанкт-Петербург</option>
+                <option value="Казань">Казань</option>
+                <option value="Екатеринбург">Екатеринбург</option>
+            </select>
+        </div>
+
+        <div class="info">
+            <p>Род деятельности:</p>
+
+            <label>Учащийся
+                <input type="radio" class="choose" name="status">
+            </label>
+
+            <label>Работающий
+                <input type="radio" class="choose" name="status">
+            </label>
+
+            <label>Пенсионер
+                <input type="radio" class="choose" name="status">
+            </label>
+
+        </div>
+
+        <div class="info">
+            <label>
+                <span class="title">Расскажите о себе:</span>
+                <textarea name="information" cols="70" rows="10" wrap="soft" maxlength="150"></textarea>
+            </label>
+
+        </div>
+
+        <button>Сохранить</button>
+    </form>
+
+
+
+
+
+</body>
+</html>
