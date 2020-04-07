@@ -3,13 +3,13 @@
     box-sizing: border-box;
     outline: none;
     color: #1b1b1b;
+    padding: 0;
 }
 body{
     padding: 20px;
     font-size: 18px;
 }
 h1{
-    text-align: center;
     color: #5b2b0c;
 }
 form{
