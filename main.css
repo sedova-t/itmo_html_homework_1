@@ -65,6 +65,7 @@ button:hover{
 }
 button:hover a{
     color: white;
+    transition: all 0.3s;
 }
 .list li{
     display: inline-block;
@@ -106,4 +107,24 @@ button:hover a{
     width: 400px;
     height: 300px;
 }
-
+.sidebar{
+    height: 944px;
+}
+.slider{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+.slider img.active{
+    opacity: 1;
+    top: 0;
+    transition: opacity 2s;
+}
+.slider img{
+    position: absolute;
+    opacity: 0;
+    top: -10000px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
