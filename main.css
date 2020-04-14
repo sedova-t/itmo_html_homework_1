@@ -50,23 +50,24 @@ textarea{
     resize: none;
 }
 button{
+    border: none;
+    width: auto;
+}
+button a{
     margin-top: 20px;
     padding: 10px 30px;
     font-size: 18px;
     cursor: pointer;
     border:1px solid #5b2b0c;
 }
-button:hover{
+button a:hover{
     background-color: #5b2b0c;
     border:1px solid #5b2b0c;
     font-size: 18px;
     transition: all 0.3s;
     color: white;
 }
-button:hover a{
-    color: white;
-    transition: all 0.3s;
-}
+
 .list li{
     display: inline-block;
 }
@@ -127,4 +128,93 @@ button:hover a{
     left: 0;
     width: 100%;
     height: auto;
+}
+.nav-container{
+    display: flex;
+    justify-content: center;
+
+}
+.nav-container li{
+    list-style-type: none;
+}
+.nav-container li{
+    position: relative;
+}
+.nav-container li .hidden-menu{
+    position: absolute;
+    opacity: 0;
+    top: -10000px;
+}
+.nav-container li:hover .hidden-menu{
+    opacity: 1;
+    top: 80px;
+}
+.nav-container li a{
+    display: block;
+    margin: 30px;
+    padding: 15px 20px;
+    background-color: #ffd7bb;
+    width: 180px;
+    text-align: center;
+}
+.nav-container li a:hover{
+    color: white;
+    background-color: #5b2b0c;
+    transition: all 0.3s;
+}
+.hidden-menu{
+    position: absolute;
+    left: 30px;
+}
+.hidden-menu li a{
+    width: auto;
+    margin: 0;
+    padding: 10px;
+}
+.conditions a{
+   text-decoration: underline;
+}
+.pop-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: -100000px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.69);
+    opacity: 0;
+
+}
+.pop-wrapper:target{
+    opacity: 1;
+    left: 0;
+
+}
+.pop-up{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    min-height: 200px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.79);
+}
+.pop-up .close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+.pop-up button{
+    width: 100px;
 }
